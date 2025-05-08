@@ -1,0 +1,25 @@
+h1 {
+    position: absolute;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    padding-left: 10cm;
+}
+
+.but {
+    position: absolute;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin-top: 3.5cm;
+    color:rgb(84, 3, 3);
+    font-size: 36px;
+    font-weight:bold;
+}

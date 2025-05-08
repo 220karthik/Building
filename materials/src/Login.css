@@ -1,0 +1,82 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://plus.unsplash.com/premium_photo-1681691912260-2ea4f6bf9991?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+  background-size: cover;
+  padding: 40px;
+}
+
+.login-form {
+  background: rgba(212, 205, 205, 0.9);
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 380px;
+  height: 100%;
+  max-height:500px ;
+  text-align: center;
+  color: #fff;
+}
+
+.login-form h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  color: #ddd;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+.input-group input:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+button {
+  flex: 1;
+  background: #0077ff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #005ecb;
+}
+
+button[type="button"] {
+  background: #555;
+}
+
+button[type="button"]:hover {
+  background: #333;
+}
+
+.error-message {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}

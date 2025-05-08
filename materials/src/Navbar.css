@@ -1,0 +1,48 @@
+.navbar {
+    position: absolute; /* stays on top of video */
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background: transparent;
+    color: white;
+  }
+  
+  .logo {
+    margin-left :1cm;
+    margin-top:0.5cm;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1cm;
+    align-items:center;
+    margin: 0;
+    padding: 0;
+    margin-top:0.1cm;
+  }
+  
+  .navbar-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links li a:hover {
+    color: #f0f0f0;
+  }
+  
+  .cart-icon {
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-right: 3cm;
+  }
+  .small-img {
+    width: 100px;
+    height: auto;
+  }
