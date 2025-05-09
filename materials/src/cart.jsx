@@ -47,6 +47,7 @@ function CartPage() {
   };
 
   return (
+    
     <div className="cart-page">
       <div className="cart-container">
         {cart.length === 0 ? (
