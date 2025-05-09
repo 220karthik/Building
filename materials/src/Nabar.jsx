@@ -14,11 +14,13 @@ const navigate = useNavigate();
     navigate('/login')
   };
 
-  const off= () => {
-    navigate('/Footer')
-  };
+ 
   const the= () => {
     navigate('/Cart')
+  };
+
+  const of= () => {
+    navigate('/About')
   };
   
 
@@ -30,7 +32,7 @@ const navigate = useNavigate();
       </div>
       <ul className="navbar-links">
         <button onClick={Welcome}>Home</button>
-        <button onClick={off}>About Us</button>
+        <button onClick={of}>About Us</button>
         <button onClick={turn}>Login</button>
         <button onClick={turn}>Products</button>
         <button onClick={the}className="cart-icon">🛒</button>

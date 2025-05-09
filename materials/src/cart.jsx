@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import './cart.css';
+import { jsPDF } from 'jspdf';
 
 function CartPage() {
   const { state } = useLocation();
@@ -24,6 +25,25 @@ function CartPage() {
     } else {
       alert(`Proceed to pay via ${paymentMethod.toUpperCase()}`);
     }
+  };
+
+  const generatePDF = () => {
+    const doc = new jsPDF();
+    doc.setFontSize(25);
+    doc.text('BILL', 14, 20); // Title
+
+    let yOffset = 30; // Start position for items
+
+    cart.forEach(item => {
+      doc.setFontSize(12);
+      doc.text(`${item.name} x ${item.count} = ₹${item.price * item.count}`, 14, yOffset);
+      yOffset += 10; // Adjust line height for next item
+    });
+
+    doc.setFontSize(14);
+    doc.text(`Total: ₹${total}`, 14, yOffset);
+
+    doc.save('Bill.pdf'); // Download the PDF
   };
 
   return (
@@ -79,6 +99,9 @@ function CartPage() {
             </div>
 
             <button className="pay-btn" onClick={handlePayment}>Pay</button>
+
+            {/* Button to generate the PDF */}
+            <button className="summary-btn" onClick={generatePDF}>Download Summary (BILL)</button>
           </>
         )}
       </div>
